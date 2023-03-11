@@ -3,3 +3,17 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 300;
 }
+
+/* input[type="checkbox"]{
+    display: none;
+} */
+
+.collapse-content{
+    max-height: 0vh;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+.toggle:checked + .label-tg + .collapse-content{
+    max-height: 80vh;
+}
