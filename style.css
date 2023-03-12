@@ -4,16 +4,16 @@ body{
     font-weight: 300;
 }
 
-/* input[type="checkbox"]{
+input[type="radio"]{
     display: none;
-} */
+}
 
-.collapse-content{
+.radio-content{
     max-height: 0vh;
     overflow: hidden;
     transition: max-height 1s;
 }
 
-.toggle:checked + .label-tg + .collapse-content{
+.rr:checked + .radio-collapse + .radio-content{
     max-height: 80vh;
 }
