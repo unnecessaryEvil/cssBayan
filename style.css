@@ -1,21 +1,49 @@
+html{
+    overflow-y: scroll;
+}
+
 body{
     background-color: azure;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+p{
+    font-size: 0.7rem;
+    font-weight: 100;
 }
 
 input[type="radio"]{
     display: none;
 }
 
+.bayan{
+    align-self: center;
+    align-items: safe;
+    padding: 1rem 0rem;
+    width: 85vw;
+}
+
 .section{
     border-top: 0.1mm solid darkslateblue;
+    font-weight: bold;
+    width: 85vw;
+    padding-top: 1rem;
+}
+
+.radio-collapse{
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
 }
 
 .radio-content{
     max-height: 0vh;
     overflow: hidden;
-    transition: max-height 1s;
+    transition: max-height 1.5s;
 }
 
 .rr:checked + .radio-collapse + .radio-content{
@@ -28,4 +56,11 @@ input[type="radio"]{
 
 .radio-content:hover{
     max-height: 80vh;
+}
+
+
+.icon{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
 }
