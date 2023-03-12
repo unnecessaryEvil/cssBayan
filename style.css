@@ -17,3 +17,7 @@ input[type="radio"]{
 .rr:checked + .radio-collapse + .radio-content{
     max-height: 80vh;
 }
+
+.rr:hover + .radio-collapse + .radio-content{
+    max-height: 80vh;
+}
