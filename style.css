@@ -65,6 +65,11 @@ input[type="radio"]{
     opacity: 1;
 }
 
+.radio-collapse:active, .radio-collapse:active .rr:checked + .radio-collapse{
+    opacity: 0.8;
+    color: blue;
+}
+
 .icon{
     font-size: 1rem;
     font-weight: bold;
@@ -76,6 +81,6 @@ input[type="radio"]{
     transform: rotate(45deg);
 }
 
-.bayan:hover .icon{
+.bayan-wrap:hover .icon{
     opacity: 100;
 }
