@@ -71,16 +71,19 @@ input[type="radio"]{
 }
 
 .icon{
+    height: 1rem;
     font-size: 1rem;
     font-weight: bold;
     margin: 0;
     opacity: 0;
-    transition: rotate 0.5s;
+    transform-origin: center center;
+    transition: transform 0.5s;
 }
 
 .radio-collapse:hover .icon, .rr:checked + .radio-collapse .icon{
-    rotate: 45deg;
-    transition: rotate 0.5s;
+    transform: rotate(45deg);
+    transform-origin: center center;
+    transition: transform 0.5s;
 }
 
 .bayan-wrap:hover .icon{
