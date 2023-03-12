@@ -10,13 +10,12 @@ body{
     justify-content: stretch;
 }
 
-p{
-    font-size: 0.7rem;
-    font-weight: 100;
-}
-
 h1{
     color:black;
+}
+
+img{
+    padding: 0.5rem;
 }
 
 input[type="radio"]{
@@ -46,13 +45,14 @@ input[type="radio"]{
     font-size: 1rem;
     cursor: pointer;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 .radio-content{
     max-height: 0vh;
+    opacity: 0.5;
     overflow: hidden;
-    transition: max-height 1.5s;
+    transition: max-height 1s, opacity 0.5s;
     display: flex;
     justify-content: center;
 }
@@ -61,16 +61,9 @@ input[type="radio"]{
     color: black;
 }
 
-.rr:checked + .radio-collapse + .radio-content{
+.rr:hover + .radio-collapse + .radio-content, .rr:checked + .radio-collapse + .radio-content, .radio-content:hover{
     max-height: 80vh;
-}
-
-.rr:hover + .radio-collapse + .radio-content{
-    max-height: 80vh;
-}
-
-.radio-content:hover{
-    max-height: 80vh;
+    opacity: 1;
 }
 
 .icon{
@@ -80,11 +73,7 @@ input[type="radio"]{
     opacity: 0;
 }
 
-.radio-collapse:hover .icon{
-    transform: rotate(45deg);
-}
-
-.rr:checked + .radio-collapse .icon{
+.radio-collapse:hover .icon, .rr:checked + .radio-collapse .icon{
     transform: rotate(45deg);
 }
 
