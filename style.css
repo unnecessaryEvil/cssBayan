@@ -8,6 +8,10 @@ input[type="radio"]{
     display: none;
 }
 
+.section{
+    border-top: 0.1mm solid darkslateblue;
+}
+
 .radio-content{
     max-height: 0vh;
     overflow: hidden;
@@ -19,5 +23,9 @@ input[type="radio"]{
 }
 
 .rr:hover + .radio-collapse + .radio-content{
+    max-height: 80vh;
+}
+
+.radio-content:hover{
     max-height: 80vh;
 }
