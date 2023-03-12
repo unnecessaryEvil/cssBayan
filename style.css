@@ -15,6 +15,10 @@ p{
     font-weight: 100;
 }
 
+h1{
+    color:black;
+}
+
 input[type="radio"]{
     display: none;
 }
@@ -24,17 +28,22 @@ input[type="radio"]{
     align-items: safe;
     padding: 1rem 0rem;
     width: 85vw;
+    color: blue;
+}
+
+.bayan:hover{
+    color:black;
 }
 
 .section{
-    border-top: 0.1mm solid darkslateblue;
+    border-top: 0.1mm solid lightblue;
     font-weight: bold;
     width: 85vw;
-    padding-top: 1rem;
+    padding: 0.5rem 0;
 }
 
 .radio-collapse{
-    font-size: 1.2rem;
+    font-size: 1rem;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -44,6 +53,12 @@ input[type="radio"]{
     max-height: 0vh;
     overflow: hidden;
     transition: max-height 1.5s;
+    display: flex;
+    justify-content: center;
+}
+
+.rr:checked + .radio-collapse{
+    color: black;
 }
 
 .rr:checked + .radio-collapse + .radio-content{
@@ -59,9 +74,10 @@ input[type="radio"]{
 }
 
 .icon{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     margin: 0;
+    opacity: 0;
 }
 
 .radio-collapse:hover .icon{
@@ -70,4 +86,8 @@ input[type="radio"]{
 
 .rr:checked + .radio-collapse .icon{
     transform: rotate(45deg);
+}
+
+.bayan:hover .icon{
+    opacity: 100;
 }
