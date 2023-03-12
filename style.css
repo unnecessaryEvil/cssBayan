@@ -49,9 +49,9 @@ input[type="radio"]{
 
 .radio-content{
     max-height: 0vh;
-    opacity: 0.5;
+    opacity: 0;
     overflow: hidden;
-    transition: max-height 1s, opacity 0.5s;
+    transition: max-height 2s, opacity 2s;
     display: flex;
     justify-content: center;
 }
