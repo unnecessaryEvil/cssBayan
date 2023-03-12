@@ -1,0 +1,91 @@
+html{
+    overflow-y: scroll;
+}
+
+body{
+    background-color: azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+img{
+    padding: 0.5rem;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.bayan{
+    align-self: center;
+    align-items: safe;
+    padding: 1rem 0rem;
+    width: 85vw;
+}
+
+.bayan-wrap{
+    color: blue;
+}
+
+.bayan-wrap:hover{
+    color:black;
+}
+
+.section{
+    border-top: 0.1mm solid lightblue;
+    font-weight: bold;
+    width: 85vw;
+    padding: 0.5rem 0;
+}
+
+.radio-collapse{
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.radio-content{
+    max-height: 0vh;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 2s, opacity 2s;
+    display: flex;
+    justify-content: center;
+}
+
+.rr:checked + .radio-collapse{
+    color: black;
+}
+
+.rr:hover + .radio-collapse + .radio-content, .rr:checked + .radio-collapse + .radio-content, .radio-content:hover{
+    max-height: 80vh;
+    opacity: 1;
+}
+
+.radio-collapse:active, .radio-collapse:active .rr:checked + .radio-collapse{
+    opacity: 0.8;
+    color: blue;
+}
+
+.icon{
+    height: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    opacity: 0;
+    transform-origin: center center;
+    transition: transform 0.5s;
+}
+
+.radio-collapse:hover .icon, .rr:checked + .radio-collapse .icon{
+    transform: rotate(45deg);
+    transform-origin: center center;
+    transition: transform 0.5s;
+}
+
+.bayan-wrap:hover .icon{
+    opacity: 100;
+}
