@@ -10,10 +10,6 @@ body{
     justify-content: stretch;
 }
 
-h1{
-    color:black;
-}
-
 img{
     padding: 0.5rem;
 }
@@ -27,10 +23,13 @@ input[type="radio"]{
     align-items: safe;
     padding: 1rem 0rem;
     width: 85vw;
+}
+
+.bayan-wrap{
     color: blue;
 }
 
-.bayan:hover{
+.bayan-wrap:hover{
     color:black;
 }
 
