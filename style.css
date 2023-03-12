@@ -58,9 +58,16 @@ input[type="radio"]{
     max-height: 80vh;
 }
 
-
 .icon{
     font-size: 1.2rem;
     font-weight: bold;
     margin: 0;
+}
+
+.radio-collapse:hover .icon{
+    transform: rotate(45deg);
+}
+
+.rr:checked + .radio-collapse .icon{
+    transform: rotate(45deg);
 }
